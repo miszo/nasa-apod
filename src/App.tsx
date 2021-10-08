@@ -1,11 +1,11 @@
-import React, { ReactElement } from 'react';
-import { Box, Grid } from '@chakra-ui/react';
+import { ReactElement } from 'react';
+import { Box, Flex } from '@chakra-ui/react';
 import { AppRouter } from 'AppRouter';
 
 export const App = (): ReactElement => (
   <Box textAlign="center" fontSize="xl">
-    <Grid minH="100vh">
+    <Flex direction="column" grow={1} shrink={0} basis="100vh">
       <AppRouter />
-    </Grid>
+    </Flex>
   </Box>
 );
